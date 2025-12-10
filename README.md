@@ -43,14 +43,7 @@ The small-scale experiment demonstrates a reproducible workflow for combining se
 **How to run & deliverables**  
 - Run `python movie_project.py` in the project folder.  
 - Deliverables included: `movie_project.py`, `data/sample_movies.csv`, `figures/`, `models/movie_model.joblib`, `README.md`, `PROJECT2025.zip`.
+- BY RISHAB TIWARI ♥
 
 ---
 
-## 4) Create a ZIP for submission (PowerShell)
-Run this command in the `PROJECT2025` folder (it will create `PROJECT2025.zip` in the Desktop folder, excluding `.venv`):
-
-```powershell
-$items = Get-ChildItem -Path . -Force | Where-Object { $_.Name -ne '.venv' }
-Compress-Archive -Path ($items | ForEach-Object { $_.FullName }) -DestinationPath ..\PROJECT2025.zip -Force
-
-BY RISHAB TIWARI ♥
