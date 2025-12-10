@@ -1,49 +1,68 @@
+🎬 Movie Success Prediction & Sentiment Analysis
 
-Paste and save as `README.md` in the project folder, then `git add README.md && git commit -m "Add README" && git push`.
+A machine-learning project that predicts movie box-office revenue and performs sentiment analysis on viewer reviews.
+Developed as an internship project by Rishab Tiwari (2025).
 
----
+📌 Project Highlights
 
-## 3) Two-page internship report (copy this text into Word/Google Docs and save/export as PDF)
-Below is the full content designed to fit two pages. Copy into Word, set font to **Arial 11**, normal margins, and export as PDF.
+✔ Predicts movie revenue using ML
+✔ Sentiment analysis using VADER
+✔ Auto-generated visual charts
+✔ Trained model saved for reuse
+✔ Clean folder structure
+✔ Internship & portfolio ready
 
-**Title page (first part)**
+📂 Project Structure
+PROJECT2025/
+│
+├── data/
+│   └── sample_movies.csv
+│
+├── figures/
+│   ├── feature_importance.png
+│   └── sentiment_pie.png
+│
+├── models/
+│   └── revenue_model.joblib
+│
+├── movie_project.py
+├── requirements.txt
+└── README.md
 
-**Movie Success Prediction & Sentiment Study — Internship Project**  
-Author: Rishab Tiwari  
-Date: 10-12-2025
+🚀 Technologies Used
 
-**Abstract**  
-This project predicts movie box-office success using a regression model trained on movie metadata and analyzes user reviews with VADER sentiment. The aim is to identify features that influence revenue and understand audience sentiment across genres. The project produces a predictive model, visualizations of feature importance, and genre-wise sentiment analysis.
+Python 3.10+
 
-**Introduction**  
-Predicting the commercial success of films is valuable for producers and distributors. This internship project explores whether metadata (budget, runtime, popularity, genre, release date) can predict box-office revenue and whether viewer sentiment correlates with financial success. The study uses a small sample dataset for demonstration and provides a process to scale with larger datasets.
+Pandas
 
-**Tools Used**  
-- Python (pandas, scikit-learn, joblib)  
-- NLTK / VADER for sentiment analysis  
-- Matplotlib for plotting  
-- PowerShell for environment and running scripts
+NumPy
 
-**Project Steps (short)**  
-1. **Data preparation** — Load CSV, handle missing values, convert dates, encode categorical features (genres).  
-2. **Sentiment analysis** — Apply VADER to sample review text to compute a compound sentiment score per movie and aggregate by genre.  
-3. **Feature engineering** — Create features: budget, runtime, popularity, genre dummies, sentiment scores, release year/month.  
-4. **Model training** — Split data, standardize numeric features, train a regression model (RandomForestRegressor or LinearRegression). Evaluate with RMSE and R².  
-5. **Evaluation & visualization** — Plot feature importance, parity plots, and genre-wise sentiment charts. Save model using `joblib`.
+Scikit-Learn
 
-**Results (summary)**  
-- Example outputs from the sample run:  
-  - RMSE: *[example output from console]*  
-  - R²: *[example output]*  
-- The trained model identifies **budget** and **popularity** as top predictors; sentiment adds modest predictive value when combined with metadata.
+Matplotlib
 
-**Conclusion**  
-The small-scale experiment demonstrates a reproducible workflow for combining sentiment analysis with structured metadata to forecast movie success. For production use, apply the same pipeline to a larger dataset (TMDB/Kaggle) and tune models for better generalization.
+NLTK (VADER Sentiment)
 
-**How to run & deliverables**  
-- Run `python movie_project.py` in the project folder.  
-- Deliverables included: `movie_project.py`, `data/sample_movies.csv`, `figures/`, `models/movie_model.joblib`, `README.md`, `PROJECT2025.zip`.
-- BY RISHAB TIWARI ♥
+Joblib
 
----
+🛠️ How to Run
+1️⃣ Activate Environment
+python -m venv .venv
+.\.venv\Scripts\activate
 
+2️⃣ Install Requirements
+pip install -r requirements.txt
+
+3️⃣ Run the Script
+python movie_project.py
+
+📊 Sample Output
+RMSE: 5896645.54
+R² Score: -6.71
+Project completed successfully.
+
+
+👤 Author
+Rishab Tiwari
+
+Internship Project — 2025
